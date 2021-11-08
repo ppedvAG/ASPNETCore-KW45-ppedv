@@ -9,4 +9,3 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionSamp
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionSample\obj\Debug\net5.0\DependencyInversionSample.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionSample\obj\Debug\net5.0\ref\DependencyInversionSample.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionSample\obj\Debug\net5.0\DependencyInversionSample.pdb
-C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionSample\obj\Debug\net5.0\DependencyInversionSample.csproj.AssemblyReference.cache

@@ -18,6 +18,10 @@ namespace DependencyInversionInMVC
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)  //Default Implementierung des Kestral Servers zu finden
+                 .ConfigureAppConfiguration((hostingContext, config) =>
+                 {
+                     config.AddJsonFile("samplewebsettings.json", optional: false, reloadOnChange: true);
+                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

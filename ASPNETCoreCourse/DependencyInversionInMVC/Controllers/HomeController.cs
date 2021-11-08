@@ -23,7 +23,7 @@ namespace DependencyInversionInMVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_car);
         }
 
         public IActionResult Privacy()

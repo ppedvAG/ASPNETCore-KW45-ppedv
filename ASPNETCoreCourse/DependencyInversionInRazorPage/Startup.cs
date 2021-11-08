@@ -1,3 +1,5 @@
+using DependencyInversionInRazorPage.Models;
+using DependencyInversionSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,7 +15,7 @@ namespace DependencyInversionInRazorPage
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration) //Information IConfiguration liegt in der ServiceCollection und ist verfügbar
         {
             Configuration = configuration;
         }
@@ -25,6 +27,11 @@ namespace DependencyInversionInRazorPage
         {
             //AddRazor 
             services.AddRazorPages();
+            services.AddSingleton<ICar, MockCar>();
+
+            services.Configure<SampleWebSettings>(Configuration); //bereiten die Benutzung für IOptions vor
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

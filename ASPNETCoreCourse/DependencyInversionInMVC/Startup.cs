@@ -1,3 +1,4 @@
+using DependencyInversionInMVC.Models;
 using DependencyInversionSample;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,7 @@ namespace DependencyInversionInMVC
 {
     public class Startup
     {
+        //Information IConfiguration liegt in der ServiceCollection und ist verfügbar
         public Startup(IConfiguration configuration) //IConfiguration beinhalten die komplett eingelesene AppSetting.json - Konfiguraitonsdatei
         {
             Configuration = configuration;
@@ -41,6 +43,7 @@ namespace DependencyInversionInMVC
 
 
             services.AddSingleton<ICar, MockCar>();
+            services.Configure<SampleWebSettings>(Configuration); //bereiten die Benutzung für IOptions vor
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

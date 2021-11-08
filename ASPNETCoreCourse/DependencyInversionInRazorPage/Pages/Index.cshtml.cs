@@ -12,17 +12,25 @@ namespace DependencyInversionInRazorPage.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly ICar _car;
+        
+        
+        
+        //private readonly ICar _car;
+        public ICar Car { get; set; }
+
+        //weitere Properties angeben
 
         public IndexModel(ILogger<IndexModel> logger, ICar car)
         {
             _logger = logger;
-            _car = car;
+            Car = car;
         }
 
-        public void OnGet()
-        {
 
+        //Get-Function initialisierung des Index-Formulars
+        public void OnGet() 
+        {
+             
         }
     }
 }
