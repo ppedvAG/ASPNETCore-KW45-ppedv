@@ -41,8 +41,11 @@ namespace DependencyInversionInMVC
             ////webapi 
             //services.AddControllers();
 
-
+            
             services.AddSingleton<ICar, MockCar>();
+            services.AddTransient<ICar, MockCar>();
+            services.AddScoped<ICar, MockCar>(); 
+
             services.Configure<SampleWebSettings>(Configuration); //bereiten die Benutzung für IOptions vor
         }
 

@@ -24,6 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		..\Agenda.md = ..\Agenda.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIScopeVsTransientVsSingletonSample", "DIScopeVsTransientVsSingletonSample\DIScopeVsTransientVsSingletonSample.csproj", "{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{84AF9C41-C6ED-4206-9727-21C33198707B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84AF9C41-C6ED-4206-9727-21C33198707B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84AF9C41-C6ED-4206-9727-21C33198707B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +71,7 @@ Global
 		{27C5BC8B-11D9-4024-A2DA-9E090AFB2423} = {01692017-5345-45B9-BE0A-CBAF4B1FAA36}
 		{BB0936C5-B686-4764-81C8-3A3DD86044D5} = {B5D0F3BF-3F2D-46FB-8922-DA8264AA30EA}
 		{84AF9C41-C6ED-4206-9727-21C33198707B} = {B5D0F3BF-3F2D-46FB-8922-DA8264AA30EA}
+		{C4E29D6C-039B-4FD2-8CDC-A80AE9531E58} = {01692017-5345-45B9-BE0A-CBAF4B1FAA36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {998835A5-D603-4FD4-8BC5-398D134DAE83}
