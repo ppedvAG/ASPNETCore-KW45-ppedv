@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "DependencyInversionInMVC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "DependencyInversionSample": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DependencyInversionInMVC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependencyInversionInMVC.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "DependencyInversionSample/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DependencyInversionInMVC/1.0.0": {
+      "type": "project",
+      "path": "../DependencyInversionInMVC/DependencyInversionInMVC.csproj",
+      "msbuildProject": "../DependencyInversionInMVC/DependencyInversionInMVC.csproj"
+    },
+    "DependencyInversionSample/1.0.0": {
+      "type": "project",
+      "path": "../DependencyInversionSample/DependencyInversionSample.csproj",
+      "msbuildProject": "../DependencyInversionSample/DependencyInversionSample.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "DependencyInversionInMVC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kw4\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionInRazorPage\\DependencyInversionInRazorPage.csproj",
+      "projectName": "DependencyInversionInRazorPage",
+      "projectPath": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionInRazorPage\\DependencyInversionInRazorPage.csproj",
+      "packagesPath": "C:\\Users\\kw4\\.nuget\\packages\\",
+      "outputPath": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionInRazorPage\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kw4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionInMVC\\DependencyInversionInMVC.csproj": {
+              "projectPath": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionInMVC\\DependencyInversionInMVC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
