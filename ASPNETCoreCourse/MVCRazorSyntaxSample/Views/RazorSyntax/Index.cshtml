@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Car> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Brand);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model);
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(Car currentCar in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentCar.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentCar.Brand)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => currentCar.Model)
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            }
+    </tbody>
+
+</table>

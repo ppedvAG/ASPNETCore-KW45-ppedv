@@ -1,0 +1,45 @@
+﻿@page
+@using RazorPageSyntaxSamples.Models
+@model RazorPageSyntaxSamples.Pages.RazorSyntax.OverviewModel
+
+
+<p>Ein implizieter Razorausdruck</p>
+<p>@DateTime.Now.ToShortDateString()</p>
+
+<p>Explizieter Razorausdruck</p>
+<p>@(DateTime.Now - TimeSpan.FromDays(7))</p>
+
+<p>C# - Codeblöcke + lokale Variablen</p>
+@{
+    string MitarbeiterDesMonats = "Maxi Mustermann";
+}
+
+@MitarbeiterDesMonats
+
+<p>C# - Codeblöocke + lokale Methoden</p>
+
+@{
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King");
+}
+
+
+@for (int i = 0; i < 10; i++)
+{
+    <p>@i</p>
+}
+
+@for (int i = 0; i < Model.Cars.Count; i++)
+{
+    Car currentCar = Model.Cars[i];
+
+
+    <p>@currentCar.Id</p>
+    <p>@currentCar.Brand</p>
+    <p>@currentCar.Model</p>
+}

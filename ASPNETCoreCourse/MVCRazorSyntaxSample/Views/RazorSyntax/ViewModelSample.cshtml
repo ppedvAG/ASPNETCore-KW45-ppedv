@@ -1,0 +1,44 @@
+﻿@model MVCRazorSyntaxSample.ViewModels.CarViewModel
+@{
+    ViewData["Title"] = "ViewModelSample";
+}
+
+<h1>ViewModelSample</h1>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cars.FirstOrDefault().Id);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cars[0].Brand);
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cars[0].Model);
+            <th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Car currentCar in Model.Cars)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => currentCar.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentCar.Brand)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentCar.Model)
+                </td>
+                <td>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
