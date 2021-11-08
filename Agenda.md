@@ -1,21 +1,25 @@
 
 TAG1:
-- [ ] Einführungs DI 
-- [ ] Dependency Injection / Seperation of Concerne (3 Stunden) 
-- [ ] Startup-Klasse
-- [ ] IServiceCollection / ServiceProvider
-- [ ] Konfiguration 
-- [ ] Kestrel - WebServer
+- [x] Einführungs DI 
+- [x] Dependency Injection / Seperation of Concerne (3 Stunden) 
+- [x] Startup-Klasse
+- [x] IServiceCollection / ServiceProvider
+- [x] Konfiguration 
+- [x] Kestrel - WebServer
+
+
+- [x] Präsentationsschicht (1 Stunde) 
+- [x] Razor-Syntax / RazorEngine 
+- [x] MVC oder Razor Pages
+
+- [ ] Logging + Fehlerbehandlung 
+TAG2:
+
+
 
 - [ ] Request / Response 
 - [ ] GET / POST 
 - [ ] Ein Formular mit mehren Buttons (Post-Methoden oder Handler?)
-- [ ] Präsentationsschicht (1 Stunde) 
-- [ ] Razor-Syntax / RazorEngine 
-- [ ] MVC oder Razor Pages
-
-TAG2:
-- [ ] Logging + Fehlerbehandlung 
 
 - [ ] Einbinden einer HotReload Middleware
 - [ ] Datenmodellierung mit Entity Framework Core 5

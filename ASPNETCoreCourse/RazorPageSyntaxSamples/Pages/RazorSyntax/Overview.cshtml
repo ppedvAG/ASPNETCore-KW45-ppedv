@@ -16,6 +16,18 @@
 
 @MitarbeiterDesMonats
 
+
+
+@("<span>Hello World</span>")@*Hier wird ein String ausgegeben*@
+
+@Html.Raw("<span>Hello World</span>") @*Hier wird HTML ausgegeben*@
+
+@* Warnung
+    Die Verwendung von HtmlHelper.Raw bei einer nicht bereinigten Benutzereingabe stellt ein Sicherheitsrisiko dar.
+    Benutzereingaben können schädlichen JavaScript-Code oder andere Sicherheitsrisiken enthalten.
+    Das Bereinigen von Benutzereingaben ist schwierig.
+    ermeiden Sie daher die Verwendung von HtmlHelper.Raw bei Benutzereingaben. *@
+
 <p>C# - Codeblöocke + lokale Methoden</p>
 
 @{
@@ -43,3 +55,107 @@
     <p>@currentCar.Brand</p>
     <p>@currentCar.Model</p>
 }
+
+
+@*Erweiterung der Code-Behind Datei *@
+<p> Achtugn funktioniert nur in RazorPages -> CodeBehind-Datei</p>
+@functions
+{
+    public string GenericMethod<T>()
+    {
+        return "a type";
+    }
+
+
+}
+
+<p>@(GenericMethod<int>())</p>
+
+
+
+@{
+    int value = 2;
+}
+
+@if (value % 2 == 0)
+{
+    <p>Ist durch 2 teilbar</p>
+}
+else
+{
+    <p>Ist nicht durch 2 teilbar</p>
+}
+
+
+@switch (value)
+{
+    case 2:
+        <p>value hat den Wert 2</p>
+        break;
+
+    case 3:
+        <p>hat den Wert 3</p>
+        break;
+
+    default:
+        <p>ist ein anderer Wert</p>
+        break;
+}
+
+@using (Html.BeginForm())@*<form>....</form>*@
+{
+    <div>
+        Email: <input type="email" id="Email" value="" />
+    </div>
+    <button type="submit">Register</button>
+}
+
+
+
+@*Wir können aus unserem IOC Container eine Instance heraus lesen*@
+@using DependencyInversionSample
+@inject ICar myMockCar
+
+<p>@myMockCar.Id</p>
+<p>@myMockCar.Brand</p>
+<p>@myMockCar.Model</p>
+
+
+@section Scripts
+{
+    <script type="text/javascript" src="~/scripts/site.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            alert("Test");
+        });
+    </script>
+}
+
+
+
+
+
+
+
+
+
+@try
+{
+
+}
+catch (Exception ex)
+{
+    <p>@ex.Message</p>
+}
+finally
+{
+    <p>the finally statement</p>
+}
+
+
+@lock (myMockCar.Brand)
+{
+
+}
+

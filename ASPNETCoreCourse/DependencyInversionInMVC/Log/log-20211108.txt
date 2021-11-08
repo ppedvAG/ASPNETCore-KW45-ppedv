@@ -1,0 +1,33 @@
+2021-11-08 16:38:04.984 +01:00 [INF] starting webhost.....
+2021-11-08 16:38:08.292 +01:00 [INF] User profile is available. Using 'C:\Users\kw4\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 16:38:09.480 +01:00 [INF] Now listening on: https://localhost:5001
+2021-11-08 16:38:09.483 +01:00 [INF] Now listening on: http://localhost:5000
+2021-11-08 16:38:09.489 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 16:38:09.490 +01:00 [INF] Hosting environment: Development
+2021-11-08 16:38:09.492 +01:00 [INF] Content root path: C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC
+2021-11-08 16:38:14.569 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/ - -
+2021-11-08 16:38:14.680 +01:00 [INF] Executing endpoint 'DependencyInversionInMVC.Controllers.HomeController.Index (DependencyInversionInMVC)'
+2021-11-08 16:38:14.820 +01:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller DependencyInversionInMVC.Controllers.HomeController (DependencyInversionInMVC).
+2021-11-08 16:38:15.050 +01:00 [INF] Executing action method DependencyInversionInMVC.Controllers.HomeController.Index (DependencyInversionInMVC) - Validation state: "Valid"
+2021-11-08 16:38:15.061 +01:00 [INF] call HomeController->Index Methode
+2021-11-08 16:38:15.078 +01:00 [INF] Executed action method DependencyInversionInMVC.Controllers.HomeController.Index (DependencyInversionInMVC), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.3148ms.
+2021-11-08 16:38:15.152 +01:00 [INF] Executing ViewResult, running view Index.
+2021-11-08 16:38:15.457 +01:00 [INF] Executed ViewResult - view Index executed in 324.8065ms.
+2021-11-08 16:38:15.461 +01:00 [INF] Executed action DependencyInversionInMVC.Controllers.HomeController.Index (DependencyInversionInMVC) in 633.6578ms
+2021-11-08 16:38:15.464 +01:00 [INF] Executed endpoint 'DependencyInversionInMVC.Controllers.HomeController.Index (DependencyInversionInMVC)'
+2021-11-08 16:38:15.478 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/ - - - 200 - text/html;+charset=utf-8 918.7124ms
+2021-11-08 16:38:15.553 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/css/site.css - -
+2021-11-08 16:38:15.554 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - -
+2021-11-08 16:38:15.555 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-11-08 16:38:15.555 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-11-08 16:38:15.555 +01:00 [INF] Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-11-08 16:38:15.610 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\wwwroot\css\site.css'
+2021-11-08 16:38:15.610 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\wwwroot\js\site.js'
+2021-11-08 16:38:15.664 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/css/site.css - - - 200 1417 text/css 110.8432ms
+2021-11-08 16:38:15.666 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-11-08 16:38:15.671 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 115.9485ms
+2021-11-08 16:38:15.666 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-11-08 16:38:15.676 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-11-08 16:38:15.688 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 133.8945ms
+2021-11-08 16:38:15.699 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 146.2285ms
+2021-11-08 16:38:15.711 +01:00 [INF] Request finished HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 155.6672ms

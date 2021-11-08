@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DependencyInversionSample/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DependencyInversionSample/1.0.0": {
+      "type": "project",
+      "path": "../DependencyInversionSample/DependencyInversionSample.csproj",
+      "msbuildProject": "../DependencyInversionSample/DependencyInversionSample.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DependencyInversionSample >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\kw4\\.nuget\\packages\\": {},
@@ -40,7 +59,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionSample\\DependencyInversionSample.csproj": {
+              "projectPath": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionSample\\DependencyInversionSample.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

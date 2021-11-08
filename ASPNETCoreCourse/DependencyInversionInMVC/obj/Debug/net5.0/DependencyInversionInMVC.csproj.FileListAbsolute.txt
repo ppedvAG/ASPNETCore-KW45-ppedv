@@ -121,3 +121,14 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMV
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\obj\Debug\net5.0\Razor\Views\ConfigurationSample\Index2Variante2.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\SampleWebSettings.json
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\obj\Debug\net5.0\Razor\Views\ConfigurationSample\Index3.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInMVC\bin\Debug\net5.0\Serilog.Sinks.File.dll

@@ -1818,6 +1818,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "DependencyInversionSample/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DependencyInversionSample.dll": {}
+        }
       }
     }
   },
@@ -6224,10 +6234,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "DependencyInversionSample/1.0.0": {
+      "type": "project",
+      "path": "../DependencyInversionSample/DependencyInversionSample.csproj",
+      "msbuildProject": "../DependencyInversionSample/DependencyInversionSample.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DependencyInversionSample >= 1.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
     ]
   },
@@ -6264,7 +6280,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionSample\\DependencyInversionSample.csproj": {
+              "projectPath": "C:\\Aktueller Kurs\\ASPNETCore-KW45-ppedv\\ASPNETCoreCourse\\DependencyInversionSample\\DependencyInversionSample.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

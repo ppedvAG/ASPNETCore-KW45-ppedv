@@ -23,6 +23,7 @@ namespace DependencyInversionInMVC.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("call HomeController->Index Methode");
             return View(_car);
         }
 

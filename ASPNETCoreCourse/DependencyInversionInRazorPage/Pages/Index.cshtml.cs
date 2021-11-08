@@ -30,7 +30,7 @@ namespace DependencyInversionInRazorPage.Pages
         //Get-Function initialisierung des Index-Formulars
         public void OnGet() 
         {
-             
+            _logger.LogInformation("Call Index-Razor Page");
         }
     }
 }

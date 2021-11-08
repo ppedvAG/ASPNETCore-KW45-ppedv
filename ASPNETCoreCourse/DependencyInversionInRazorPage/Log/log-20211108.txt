@@ -1,0 +1,31 @@
+2021-11-08 16:40:06.525 +01:00 [INF] starting webhost.....
+2021-11-08 16:40:13.849 +01:00 [INF] User profile is available. Using 'C:\Users\kw4\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 16:40:14.554 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 16:40:14.554 +01:00 [INF] Hosting environment: Development
+2021-11-08 16:40:14.555 +01:00 [INF] Content root path: C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage
+2021-11-08 16:40:14.676 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/ - -
+2021-11-08 16:40:14.776 +01:00 [INF] Executing endpoint '/Index'
+2021-11-08 16:40:14.960 +01:00 [INF] Route matched with {page = "/Index", action = "", controller = ""}. Executing page /Index
+2021-11-08 16:40:21.376 +01:00 [INF] Executing handler method DependencyInversionInRazorPage.Pages.IndexModel.OnGet - ModelState is "Valid"
+2021-11-08 16:40:21.384 +01:00 [INF] Call Index-Razor Page
+2021-11-08 16:40:21.384 +01:00 [INF] Executed handler method OnGet, returned result .
+2021-11-08 16:40:21.392 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2021-11-08 16:40:21.393 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2021-11-08 16:40:21.898 +01:00 [INF] Executed page /Index in 6917.4081ms
+2021-11-08 16:40:21.907 +01:00 [INF] Executed endpoint '/Index'
+2021-11-08 16:40:21.989 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/ - - - 200 - text/html;+charset=utf-8 7316.7434ms
+2021-11-08 16:40:22.105 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/lib/bootstrap/dist/js/bootstrap.bundle.min.js - -
+2021-11-08 16:40:22.106 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/css/site.css - -
+2021-11-08 16:40:22.106 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/lib/bootstrap/dist/css/bootstrap.min.css - -
+2021-11-08 16:40:22.110 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/lib/jquery/dist/jquery.min.js - -
+2021-11-08 16:40:22.110 +01:00 [INF] Request starting HTTP/2 GET https://localhost:44395/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - -
+2021-11-08 16:40:22.176 +01:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage\wwwroot\js\site.js'
+2021-11-08 16:40:22.185 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0 - - - 200 230 application/javascript 75.0806ms
+2021-11-08 16:40:22.192 +01:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage\wwwroot\css\site.css'
+2021-11-08 16:40:22.201 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/css/site.css - - - 200 1417 text/css 95.8256ms
+2021-11-08 16:40:22.563 +01:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage\wwwroot\lib\jquery\dist\jquery.min.js'
+2021-11-08 16:40:22.563 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2021-11-08 16:40:22.563 +01:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInRazorPage\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2021-11-08 16:40:22.574 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/lib/bootstrap/dist/css/bootstrap.min.css - - - 200 155764 text/css 468.2115ms
+2021-11-08 16:40:22.574 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/lib/jquery/dist/jquery.min.js - - - 200 89476 application/javascript 463.8863ms
+2021-11-08 16:40:22.575 +01:00 [INF] Request finished HTTP/2 GET https://localhost:44395/lib/bootstrap/dist/js/bootstrap.bundle.min.js - - - 200 78641 application/javascript 469.4619ms
