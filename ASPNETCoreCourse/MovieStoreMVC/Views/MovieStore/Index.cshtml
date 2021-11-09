@@ -26,5 +26,29 @@
             </th>
         </tr>
     </thead>
+    <tbody>
+        @foreach (Movie currentMovie in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => currentMovie.Title)
+            </td>
+            <td>
+                @*@currentMovie.Description*@
+                @Html.DisplayFor(modelItem => currentMovie.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => currentMovie.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => currentMovie.Genre)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@currentMovie.Id">Details</a>"
+                @*<a asp-page="./Details" asp-route-id="@currentMovie.Id">Details</a> |*@
+            </td>
+        </tr>
+        }
+    </tbody>
 </table>
 
