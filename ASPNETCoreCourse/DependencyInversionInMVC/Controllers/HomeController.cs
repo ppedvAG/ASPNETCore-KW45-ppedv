@@ -15,7 +15,7 @@ namespace DependencyInversionInMVC.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly ICar _car;
 
-        public HomeController(ILogger<HomeController> logger, ICar car)
+        public HomeController(ILogger<HomeController> logger, ICar car) //Konstruktor Injection
         {
             _logger = logger;
             _car = car;
@@ -36,6 +36,11 @@ namespace DependencyInversionInMVC.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult About([FromServices] ICar theOtherCar) //Zugriff auf IOC-Container (weitere Variante)
+        {
+            return Content($"Current server time: {theOtherCar.Brand}");
         }
     }
 }

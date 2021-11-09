@@ -39,3 +39,6 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\RazorPageSyntaxSamples.pdb
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\RazorPageSyntaxSamples.genruntimeconfig.cache
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\RazorPageSyntaxSamples.csproj.CopyComplete
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\RazorSyntax\Overview.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\bin\Debug\net5.0\DependencyInversionSample.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\bin\Debug\net5.0\DependencyInversionSample.pdb

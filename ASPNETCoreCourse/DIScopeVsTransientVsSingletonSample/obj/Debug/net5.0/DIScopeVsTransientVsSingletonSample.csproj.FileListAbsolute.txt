@@ -1050,3 +1050,7 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSin
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.pdb
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.genruntimeconfig.cache
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.csproj.CopyComplete
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll

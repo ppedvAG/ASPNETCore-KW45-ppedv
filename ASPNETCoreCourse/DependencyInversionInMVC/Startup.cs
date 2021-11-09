@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Westwind.AspNetCore.LiveReload;
 
 namespace DependencyInversionInMVC
 {
@@ -31,7 +32,11 @@ namespace DependencyInversionInMVC
         public void ConfigureServices(IServiceCollection services)
         {
             //MVC wird benutzt  -> AddControllersWithViews
-            services.AddControllersWithViews(); //AddSingleton / AddTransient / AddScoped -> AddControllerWithView ist eine Erweiterung
+            services.AddControllersWithViews()  //AddSingleton / AddTransient / AddScoped -> AddControllerWithView ist eine Erweiterung
+                .AddRazorRuntimeCompilation(); //nuget-package -> Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation
+
+
+            services.AddLiveReload();
 
             //Für RazorPages UI-Framework 
             //services.AddRazorPages();
@@ -42,8 +47,8 @@ namespace DependencyInversionInMVC
             //services.AddControllers();
 
             
-            services.AddSingleton<ICar, MockCar>();
-            services.AddTransient<ICar, MockCar>();
+            //services.AddSingleton<ICar, MockCar>();
+            //services.AddTransient<ICar, MockCar>();
             services.AddScoped<ICar, MockCar>(); 
 
             services.Configure<SampleWebSettings>(Configuration); //bereiten die Benutzung für IOptions vor
@@ -63,6 +68,8 @@ namespace DependencyInversionInMVC
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
+
+            app.UseLiveReload();
             app.UseStaticFiles();
 
             app.UseRouting();

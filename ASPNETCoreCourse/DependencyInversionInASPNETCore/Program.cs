@@ -14,7 +14,7 @@ namespace DependencyInversionInASPNETCore
 
 
             serviceCollection.AddSingleton<ICar, MockCar>();
-            serviceCollection.AddSingleton<ICar, Car>();
+            //serviceCollection.AddSingleton<ICar, Car>();
 
             //serviceCollection.AddScoped<ICar, MockCar>();
             //serviceCollection.AddTransient<ICar, MockCar>();

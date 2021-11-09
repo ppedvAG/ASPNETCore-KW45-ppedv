@@ -51,7 +51,7 @@ namespace DependencyInversionSample
     #region Best Practise 
     //Konzept ist möglich -> Code First 
 
-    #region inteface.dll
+    #region interface.dll
     
     public interface ICar
     {

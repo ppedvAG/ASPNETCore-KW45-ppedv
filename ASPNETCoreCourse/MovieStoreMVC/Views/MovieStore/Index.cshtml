@@ -1,0 +1,30 @@
+﻿@model IEnumerable<MovieStoreMVC.Models.Movie> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+
+            <!-- Diese Column repräsentiert die Button für Bearbeiten, Löschen und Details -->
+            <th>
+            </th>
+        </tr>
+    </thead>
+</table>
+

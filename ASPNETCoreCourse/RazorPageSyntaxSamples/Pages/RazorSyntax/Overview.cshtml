@@ -46,15 +46,15 @@
     <p>@i</p>
 }
 
-@for (int i = 0; i < Model.Cars.Count; i++)
+@*@for (int i = 0; i < Model.Cars.Count; i++)
 {
-    Car currentCar = Model.Cars[i];
+    ICar currentCar = Model.Cars[i];
 
 
     <p>@currentCar.Id</p>
     <p>@currentCar.Brand</p>
     <p>@currentCar.Model</p>
-}
+}*@
 
 
 @*Erweiterung der Code-Behind Datei *@
