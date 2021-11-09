@@ -1,21 +1,21 @@
-﻿@model IEnumerable<MovieStoreMVC.Models.Movie> 
+﻿@model IEnumerable<MovieStoreMVC.Models.Movie>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
-
+<a asp-action="Create">Erstelle neuen Film</a>"
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model=>model.Title)
+                @Html.DisplayNameFor(model => model.Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model=>model.Description)
+                @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model=>model.Price)
+                @Html.DisplayNameFor(model => model.Price)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Genre)
@@ -29,25 +29,26 @@
     <tbody>
         @foreach (Movie currentMovie in Model)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => currentMovie.Title)
-            </td>
-            <td>
-                @*@currentMovie.Description*@
-                @Html.DisplayFor(modelItem => currentMovie.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => currentMovie.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => currentMovie.Genre)
-            </td>
-            <td>
-                <a asp-action="Details" asp-route-id="@currentMovie.Id">Details</a>"
-                @*<a asp-page="./Details" asp-route-id="@currentMovie.Id">Details</a> |*@
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Title)
+                </td>
+                <td>
+                    @*@currentMovie.Description*@
+                    @Html.DisplayFor(modelItem => currentMovie.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => currentMovie.Genre)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@currentMovie.Id">Details</a>"
+                    <a asp-action="Edit" asp-route-id="@currentMovie.Id">Bearbeiten</a>"
+                    @*<a asp-page="./Details" asp-route-id="@currentMovie.Id">Details</a> |*@
+                </td>
+            </tr>
         }
     </tbody>
 </table>

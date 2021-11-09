@@ -122,3 +122,4 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\MovieStore\Index.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\MovieStore\Details.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\MovieStore\Create.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\MovieStore\Edit.cshtml.g.cs
