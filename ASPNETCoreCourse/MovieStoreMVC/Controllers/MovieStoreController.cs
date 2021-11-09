@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace MovieStoreMVC.Controllers
 {
@@ -50,9 +52,40 @@ namespace MovieStoreMVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Movie movie) //Parameter-Binding wird hier in MVC relevant (Aus Formular wird ein Object)
         {
-            _context.Add(movie);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (movie.Title == "Hostel 2")
+            {
+                //AddModelError lässt ModelState.IsValid auf false setzten 
+                ModelState.AddModelError("Title", "Ihr Film stand auf dem Index");
+            }
+
+            if (ModelState.IsValid)
+            {
+                _context.Add(movie);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(movie);
+            #region andere variante
+            //if (ModelState.IsValid)
+            //{
+            //    try
+            //    {
+            //        _context.Add(movie);
+            //        await _context.SaveChangesAsync();
+            //    }
+            //    catch (DbUpdateConcurrencyException)
+            //    {
+
+            //    }
+            //    return RedirectToAction(nameof(Index));
+            //}
+
+
+
+
+            //return RedirectToAction(nameof(Index));
+            #endregion
         }
 
 
@@ -99,6 +132,47 @@ namespace MovieStoreMVC.Controllers
             }
             return View(movie);
         }
+
+
+
+
+
+        [HttpPost]
+        public IActionResult Buy(int? id) //Id des zu kaufenden Artikels
+        {
+            if (!id.HasValue)
+            {
+                return BadRequest(); //Fehlercode 400
+            }
+
+            //Ist Session verfügbar
+            if (HttpContext.Session.IsAvailable)
+            {
+                IList<int> idList = new List<int>();
+
+
+                //Ist schon ein Einkaufwagen (ShoppingCart) verfügbar 
+                if (HttpContext.Session.Keys.Contains("ShoppingCart"))
+                {
+
+                    //Wollen bishere einkaufe auslesen
+                    string jsonIdList = HttpContext.Session.GetString("ShoppingCart");
+
+                    //bekommen eine Id-Liste mit allen vorhandenen Artikel im Warenkorb
+                    idList = JsonSerializer.Deserialize<List<int>>(jsonIdList);
+                }
+
+                //Artikel wird dem Warenkorb hinzugefügt
+                idList.Add(id.Value);
+
+                string jsonString = JsonSerializer.Serialize(idList);
+
+                HttpContext.Session.SetString("ShoppingCart", jsonString);
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
     }

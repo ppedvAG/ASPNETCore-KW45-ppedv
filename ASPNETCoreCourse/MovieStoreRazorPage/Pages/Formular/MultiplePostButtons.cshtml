@@ -1,0 +1,17 @@
+﻿@page
+@model MovieStoreRazorPage.Pages.Formular.MultiplePostButtonsModel
+@{
+}
+
+<form method="post">
+    <input name="eins" />
+    <br />
+    <input name="zwei" />
+    <br />
+
+
+    <input type="submit" asp-page-handler="plus" value="+" />
+    <input type="submit" asp-page-handler="minus" value="-" />
+</form>
+
+<p>Ausgabe: Ergebnis @Model.Ergebnis</p>

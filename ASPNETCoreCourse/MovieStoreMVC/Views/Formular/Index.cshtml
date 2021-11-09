@@ -1,0 +1,38 @@
+﻿@model MovieStoreMVC.Models.Movie
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Genre" class="control-label"></label>
+        <select asp-for="Genre" class="form-control" asp-items="Html.GetEnumSelectList<MovieStoreMVC.Models.Movie.GenreTyp>()"></select>
+        <span asp-validation-for="Genre" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <input asp-action="Save" type="submit" value="Create" class="btn btn-primary" /> <!-- bei klick auf submit-button wird die Create - Post- Methode aufgerufen und Formular übertragen-->
+        <input asp-action="Update" type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>

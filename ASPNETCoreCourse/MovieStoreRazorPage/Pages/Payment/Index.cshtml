@@ -1,0 +1,55 @@
+﻿@page
+@model MovieStoreRazorPage.Pages.Payment.IndexModel
+
+@if (Model.Movies.Count() != 0)
+{
+    <form method="post">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Genre)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movies[0].Price)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Movies)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Genre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            <input class="btn btn-primary" type="submit" asp-page-handler="Delete" asp-route-id="@item.Id" value="-" />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </form>
+
+    @*<a asp-page="./Payment">Gehe zur Kasse</a>*@
+}
+else
+{
+    <p>Es befinden sich keine Waren im Warenkorb</p>
+}

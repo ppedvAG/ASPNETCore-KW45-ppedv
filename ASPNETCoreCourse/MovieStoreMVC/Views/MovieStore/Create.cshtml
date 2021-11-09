@@ -35,3 +35,8 @@
         <input type="submit" value="Create" class="btn btn-primary" /> <!-- bei klick auf submit-button wird die Create - Post- Methode aufgerufen und Formular übertragen-->
     </div>
 </form>
+
+<!-- Clientseitige Validierung ist aktiviert -->
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

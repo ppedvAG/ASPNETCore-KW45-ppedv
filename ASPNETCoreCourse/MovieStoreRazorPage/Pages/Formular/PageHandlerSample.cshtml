@@ -1,0 +1,14 @@
+﻿@page "{handler?}"
+@model MovieStoreRazorPage.Pages.Formular.PageHandlerSampleModel
+@{
+}
+
+<h1>Calculator</h1>
+
+<form method="post">
+    <input name="eins" />
+    <input name="zwei" />
+    <button type="submit">Add</button>
+</form>
+
+<p>Ausgabe Ergebnis: @Model.Ergebnis</p>

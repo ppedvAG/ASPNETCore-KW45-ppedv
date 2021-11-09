@@ -1,0 +1,28 @@
+﻿@model MovieStoreRazorPage.Pages.MovieStore.IndexModel
+@using MovieStoreRazorPage.Models
+
+@{
+    Movie movieWithLowestPrice = null;
+
+    if (Model.Movie.Any())
+    {
+        movieWithLowestPrice = Model.Movie.OrderBy(p => p.Price).First();
+    }
+
+
+
+    if (movieWithLowestPrice != null)
+    {
+        <div class="card" style="background-color:orange">
+            <p>Sonderangebot</p>
+            <div class="card-body">
+                <p>@movieWithLowestPrice.Title</p>
+                <p>@movieWithLowestPrice.Price</p>
+                <a asp-page="./Details" asp-route-id="@movieWithLowestPrice.Id">Weitere Produktdetail</a>
+            </div>
+        </div>
+    }
+}
+
+
+
