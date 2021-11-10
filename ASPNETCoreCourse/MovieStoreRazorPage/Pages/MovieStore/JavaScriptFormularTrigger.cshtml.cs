@@ -20,23 +20,20 @@ namespace MovieStoreRazorPage.Pages.MovieStore
         }
 
         public List<MovieItem> MovieItems { get; set; }
-        
+
         [BindProperty]
         public int SelectedId { get; set; }
 
-        public async Task OnGet()
+        public async Task OnGetAsync()
         {
             MovieItems = await _context.Movies.Select(
-               x => new MovieItem()
-               {
-                   Id = x.Id,
-                   Title = x.Title
-               }
-           ).ToListAsync();
+                x => new MovieItem()
+                {
+                    Id = x.Id,
+                    Title = x.Title
+                }).ToListAsync();
         }
 
-
-       
         public IActionResult OnPostSelectMovieTitle(int selectedId)
         {
             return RedirectToPage("Details", new { Id = selectedId });

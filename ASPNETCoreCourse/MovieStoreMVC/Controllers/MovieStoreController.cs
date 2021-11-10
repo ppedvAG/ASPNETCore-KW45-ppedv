@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Text.Json;
 using Microsoft.AspNetCore.Http;
+using MovieStoreMVC.ViewModels;
 
 namespace MovieStoreMVC.Controllers
 {
@@ -45,7 +46,7 @@ namespace MovieStoreMVC.Controllers
        //Get-Methode -> Wir geben ein leeres Formular an den Browser
        public IActionResult Create()
        {
-            return View();
+            return View(); //Formular ohne Daten wird gerendet und dem Browser zugesendet
        }
 
         [HttpPost]
@@ -133,10 +134,6 @@ namespace MovieStoreMVC.Controllers
             return View(movie);
         }
 
-
-
-
-
         [HttpPost]
         public IActionResult Buy(int? id) //Id des zu kaufenden Artikels
         {
@@ -175,5 +172,29 @@ namespace MovieStoreMVC.Controllers
 
 
 
+
+
+        public async Task<IActionResult> JavaScriptFormularTrigger()
+        {
+            List<MovieItem> items = await _context.Movies.Select(
+                x => new MovieItem()
+                {
+                    Id = x.Id,
+                    Title = x.Title
+                }).ToListAsync();
+
+            MovieTitleListViewModel vm = new MovieTitleListViewModel();
+            vm.TitleList = items;
+
+            return View(vm);
+        }
+
+        [HttpPost]
+        public IActionResult SelectMovieTitle(MovieTitleListViewModel vm)
+        {
+            //vm.SelectedId ist belegt und muss ausgewertet 
+
+            return RedirectToAction(nameof(Details), new { Id = vm.SelectedId });
+        }
     }
 }

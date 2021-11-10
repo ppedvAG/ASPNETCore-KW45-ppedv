@@ -129,3 +129,4 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\Shared\_Layout2.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\Shared\_ProductWithLowestPrice.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\Payment\Index.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\MovieStore\JavaScriptFormularTrigger.cshtml.g.cs

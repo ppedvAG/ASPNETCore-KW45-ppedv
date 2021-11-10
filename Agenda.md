@@ -26,27 +26,32 @@ TAG2:
   - [ ] Einführung
   - [ ] Strategien: CodeFirst / CodeFirst Reverse
  
+
+- [ ] Sicherheit: (30Min) -> Zur Kasse 
+  - [ ] Migration von Identity.UI in eine bestehende ASPNETCore Anwendung 
+
+- [ ] Tag-Helpers (ShowCase)
+- [ ] HTML-Tag Helpers
+ 
 - [x] Data Annotations
 - [x] Client / Server Validierung
 - [x] Partial Views 
-- [ ] Tag-Helpers
-- [ ] HTML-Tag Helpers
-- [ ] StateManagement Teil 1:
-  - [ ] Session
+- [x] StateManagement Teil 1:
+  - [x] Session
 TAG3:
 
-
 - [ ] State Management (30 Min)
-    - [] ViewDate / TempDate / 
+    - [] ViewDate / TempDate / MVC (ViewBag)
+- [ ] Routing (10Min)
 
-- [ ] Sicherheit: (30Min) 
-  - [ ] Migration von Identity.UI in eine bestehende ASPNETCore Anwendung 
+Blazor Kurs (Voraussetzungen):
+- [ ] RazorPages @page - Direktive 
+- [ ] SignalR (Zusammenspiel mit Service Layer)
+
 
 - [ ] MVC + Razor page -> ViewComponent 
   - [ ] Erweiteres Beispiel zu Localizations -> Razor Page (Quellcode verfügbar gemacht)
 
-- [ ] Routing (10Min)
-- [ ] RazorPages @page - Direktive 
 
 
 - [ ] WebApi (4Stunden)
@@ -55,7 +60,7 @@ TAG3:
   - [ ] Code Generierung mit Swagger (5. Min)
 
 ShowCase: 
-- [ ] SignalR (Zusammenspiel mit Service Layer)
+
 - [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
 - [ ] Erstellen einer benutzerdefinierten Middleware (ThumbNail Generator) (MapWhen)
 - [ ] Filter

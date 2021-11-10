@@ -27,7 +27,8 @@
 
     <div class="form-group">
         <label asp-for="Genre" class="control-label"></label>
-        <select asp-for="Genre" class="form-control" asp-items="Html.GetEnumSelectList<MovieStoreMVC.Models.Movie.GenreTyp>()"></select>
+        <select asp-for="Genre" class="form-control" asp-items="Html.GetEnumSelectList<MovieStoreMVC.Models.Movie.GenreTyp>()">
+        </select>
         <span asp-validation-for="Genre" class="text-danger"></span>
     </div>
 
@@ -40,3 +41,14 @@
 @section Scripts {
     @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+
+@*<form id="culture-switcher">
+    <select name="culture" id="culture-options">
+        <option></option>
+        @foreach (var culture in Model.SupportedCultures)
+        {
+            <option value="@culture.Name" selected="@(Model.CurrentUICulture.Name == culture.Name)">@culture.DisplayName</option>
+        }
+    </select>
+</form>*@

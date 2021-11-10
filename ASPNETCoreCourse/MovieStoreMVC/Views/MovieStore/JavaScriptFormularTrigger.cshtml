@@ -1,13 +1,15 @@
-﻿@page
-@model MovieStoreRazorPage.Pages.MovieStore.JavaScriptFormularTriggerModel
+﻿@using MovieStoreMVC.ViewModels 
+@model MovieTitleListViewModel
 @{
+    ViewData["Title"] = "JavaScriptFormularTrigger";
 }
 
-<form id="movie-title-switcher" asp-page-handler="SelectMovieTitle" method="post">
+<h1>JavaScriptFormularTrigger</h1>
 
+<form id="movie-title-switcher" asp-action="SelectMovieTitle" asp-controller="MovieStore" method="post">
     <div class="row">
         <div class="col-md-4">
-            <select id="drpEmpList" class="form-control" asp-for="@Model.SelectedId" asp-items="@(new SelectList(Model.MovieItems, "Id", "Title"))">
+            <select id="drpEmpList" class="form-control" asp-for="@Model.SelectedId" asp-items="@(new SelectList(Model.TitleList, "Id", "Title"))">
                 <option value="">--Select--</option>
             </select>
             <input type="hidden" asp-for="@Model.SelectedId" />
@@ -17,11 +19,13 @@
             <input type="submit" name="btnSubmit" value="Submit" class="btn btn-success" />
         </div>*@
     </div>
-
-</form>  
+</form>
 
 <script>
     document.getElementById("drpEmpList").addEventListener("change", () => {
         document.getElementById("movie-title-switcher").submit();
     });
 </script>
+
+
+
