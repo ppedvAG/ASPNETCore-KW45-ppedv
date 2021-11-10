@@ -1,0 +1,13 @@
+﻿@page
+@model MovieStoreRazorPage.Pages.Picture.UploadFileModel
+@{
+}
+
+<form enctype="multipart/form-data" method="post">
+    <!--DialogBox für File Selektierung-->
+
+    <input type="file" name="datei" dirname="C:\" />
+    <div>
+        <input type="submit" value="Upload" />
+    </div>
+</form>

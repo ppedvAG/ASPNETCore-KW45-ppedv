@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "UploadFile";
+}
+
+<h1>UploadFile</h1>
+
+<h1>UploadPicture</h1>
+
+<form enctype="multipart/form-data" asp-action="UploadFile">
+    <!-- Dialog Box für File Selektierung -->
+    <input type="file" name="datei" dirname="C:\" />
+    <div>
+        <!-- Submit Button -->
+        <input type="submit" value="Upload" />
+    </div>
+</form>
