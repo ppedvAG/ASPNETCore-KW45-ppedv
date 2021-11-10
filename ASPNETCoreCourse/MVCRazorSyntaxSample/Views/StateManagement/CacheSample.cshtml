@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewData["Title"] = "CacheSample";
+}
+
+<h1>CacheSample</h1>
+
+<cache expires-after="@new TimeSpan(0,0,30)">
+    @DateTime.Now
+</cache>
+

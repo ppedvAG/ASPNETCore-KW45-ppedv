@@ -119,3 +119,8 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\ob
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\bin\Debug\net5.0\DependencyInversionSample.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\bin\Debug\net5.0\DependencyInversionSample.pdb
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\RazorSyntax\RazorSyntaxOverview.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\StateManagement\ViewDataSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempData1.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempData2.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\StateManagement\TempData3.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MVCRazorSyntaxSample\obj\Debug\net5.0\Razor\Views\StateManagement\ViewBagSample.cshtml.g.cs

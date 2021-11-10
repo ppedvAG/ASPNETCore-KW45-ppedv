@@ -64,6 +64,10 @@ namespace MovieStoreMVC
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute(name: "moviestore",
+                pattern: "moviestore/{*article}",
+                defaults: new { controller = "moviestore", action = "Index" });
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

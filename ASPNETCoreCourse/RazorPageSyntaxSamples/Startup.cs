@@ -24,6 +24,7 @@ namespace RazorPageSyntaxSamples
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddResponseCaching();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +42,7 @@ namespace RazorPageSyntaxSamples
             }
 
             app.UseHttpsRedirection();
+            app.UseResponseCaching();
             app.UseStaticFiles();
 
             app.UseRouting();

@@ -22,16 +22,25 @@ TAG2:
 - [x] Ein Formular mit mehren Buttons (Post-Methoden oder Handler?)
 
 - [x] Einbinden einer HotReload Middleware
-- [ ] Datenmodellierung mit Entity Framework Core 5
-  - [ ] Einführung
-  - [ ] Strategien: CodeFirst / CodeFirst Reverse
+- [x] Datenmodellierung mit Entity Framework Core 5
+  - [x] Einführung
+  - [x] Strategien: CodeFirst / CodeFirst Reverse
  
 
-- [ ] Sicherheit: (30Min) -> Zur Kasse 
-  - [ ] Migration von Identity.UI in eine bestehende ASPNETCore Anwendung 
+- [x] Sicherheit: (30Min) -> Zur Kasse 
+  - [x] Migration von Identity.UI in eine bestehende ASPNETCore Anwendung 
+
+- [x] State Management (30 Min)
+    - [x] ViewDate / TempDate / MVC (ViewBag)
+- [ ] Routing (10Min)
+
 
 - [ ] Tag-Helpers (ShowCase)
 - [ ] HTML-Tag Helpers
+
+Blazor Kurs (Voraussetzungen):
+- [ ] RazorPages @page - Direktive 
+- [ ] SignalR (Zusammenspiel mit Service Layer)
  
 - [x] Data Annotations
 - [x] Client / Server Validierung
@@ -40,13 +49,7 @@ TAG2:
   - [x] Session
 TAG3:
 
-- [ ] State Management (30 Min)
-    - [] ViewDate / TempDate / MVC (ViewBag)
-- [ ] Routing (10Min)
-
-Blazor Kurs (Voraussetzungen):
-- [ ] RazorPages @page - Direktive 
-- [ ] SignalR (Zusammenspiel mit Service Layer)
+-
 
 
 - [ ] MVC + Razor page -> ViewComponent 

@@ -164,7 +164,6 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\bin\Debug
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\MovieStoreMVC.csproj.AssemblyReference.cache
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\MovieStoreMVC.MvcApplicationPartsAssemblyInfo.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
@@ -208,3 +207,4 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\Razor\Views\Payment\Cart.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\MovieStoreMVC\obj\Debug\net5.0\MovieStoreMVC.csproj.AssemblyReference.cache

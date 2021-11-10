@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "TempData2";
+
+    //string msg = TempData["Message"].ToString();
+    //TempData.Keep();
+}
+
+<h1>TempData2</h1>
+
+@TempData.Peek("Message") 
+<!-- TempData.Peek gibt den Inhalt von Message aus und unterdrückt die Löschung-->
+
+
+

@@ -24,6 +24,7 @@ namespace MVCRazorSyntaxSample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddResponseCaching();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,6 +42,7 @@ namespace MVCRazorSyntaxSample
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseResponseCaching();
 
             app.UseRouting();
 
@@ -48,6 +50,12 @@ namespace MVCRazorSyntaxSample
 
             app.UseEndpoints(endpoints =>
             {
+                //Default-Route-Pattern: pattern: "{controller=Home}/{action=Index}/{id?}");
+                //https://localhost:5001/[Preffix_Controllerklasse]/[Action-Methode]/[optionale_ID]
+                //https://localhost:5001/Home/Index -> Startseite 
+                //https://localhost:5001/Home -> Startseite 
+                //https://localhost:5001/ -> Startseite 
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

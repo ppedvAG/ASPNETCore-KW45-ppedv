@@ -1,0 +1,8 @@
+﻿@page
+@model RazorPageSyntaxSamples.Pages.StateManagement.CacheSampleModel
+@{
+}
+
+<cache expires-after="@new TimeSpan(0,0,30)">
+    @DateTime.Now
+</cache>

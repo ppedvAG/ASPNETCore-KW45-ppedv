@@ -22,13 +22,18 @@ namespace MovieStoreMVC.Controllers
         }
 
 
+
         //Get-Methode: Expliziete HttpGet-Angabe -> [HttpGet]
+        
+      
         public async Task<IActionResult> Index()
         {
             return View(await _context.Movies.ToListAsync());
         }
 
         //Get-Methode: Details - Zeige einen Datensatz explizit an -> // GET: Movie/Details/5
+
+        [HttpGet("Details")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,14 +47,16 @@ namespace MovieStoreMVC.Controllers
             return View(movie);
         }
 
-
-       //Get-Methode -> Wir geben ein leeres Formular an den Browser
-       public IActionResult Create()
+        //[HttpGet("Create")]
+        [HttpGet("/moviestore/create")]
+        //Get-Methode -> Wir geben ein leeres Formular an den Browser
+        public IActionResult Create()
        {
             return View(); //Formular ohne Daten wird gerendet und dem Browser zugesendet
        }
 
-        [HttpPost]
+        //[HttpPost("Create")]
+        [HttpPost("/moviestore/create")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Movie movie) //Parameter-Binding wird hier in MVC relevant (Aus Formular wird ein Object)
         {
@@ -91,6 +98,8 @@ namespace MovieStoreMVC.Controllers
 
 
         // GET: Movie/Edit/5
+
+        [HttpGet("Edit/{id}")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -109,8 +118,9 @@ namespace MovieStoreMVC.Controllers
         // POST: Movie/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
+        //[HttpPost]
         [ValidateAntiForgeryToken]
+        [HttpPost("Edit/{id}")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,Price,Genre")] Movie movie)
         {
             if (id != movie.Id)
@@ -134,7 +144,7 @@ namespace MovieStoreMVC.Controllers
             return View(movie);
         }
 
-        [HttpPost]
+        [HttpPost("Buy/{id}")]
         public IActionResult Buy(int? id) //Id des zu kaufenden Artikels
         {
             if (!id.HasValue)
@@ -173,7 +183,7 @@ namespace MovieStoreMVC.Controllers
 
 
 
-
+        [HttpGet("JavaScriptFormularTrigger")]
         public async Task<IActionResult> JavaScriptFormularTrigger()
         {
             List<MovieItem> items = await _context.Movies.Select(
@@ -189,7 +199,8 @@ namespace MovieStoreMVC.Controllers
             return View(vm);
         }
 
-        [HttpPost]
+        
+        [HttpPost("SelectMovieTitle")]
         public IActionResult SelectMovieTitle(MovieTitleListViewModel vm)
         {
             //vm.SelectedId ist belegt und muss ausgewertet 

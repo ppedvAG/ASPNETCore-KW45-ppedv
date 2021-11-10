@@ -1,0 +1,9 @@
+﻿@page
+@model RazorPageSyntaxSamples.Pages.StateManagement.TempData2Model
+@{
+    //string msg = TempData["Message"].ToString();
+    //TempData.Keep();
+}
+@*@msg*@
+
+@TempData.Peek("Message") 

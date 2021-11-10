@@ -42,3 +42,8 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\RazorSyntax\Overview.cshtml.g.cs
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\bin\Debug\net5.0\DependencyInversionSample.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\bin\Debug\net5.0\DependencyInversionSample.pdb
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\StateManagement\TempData1.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\StateManagement\TempData2.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\StateManagement\TempData3.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\StateManagement\ViewDataSample.cshtml.g.cs
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\RazorPageSyntaxSamples\obj\Debug\net5.0\Razor\Pages\StateManagement\CacheSample.cshtml.g.cs
