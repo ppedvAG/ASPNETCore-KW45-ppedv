@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MovieStoreMVC.Models;
 using System;
@@ -18,11 +19,13 @@ namespace MovieStoreMVC.Controllers
             _logger = logger;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();
         }
 
+        [Authorize] // Alle angemeldeten Benutzer dürfen diese Methode aufrufen
         public IActionResult Privacy()
         {
             return View();

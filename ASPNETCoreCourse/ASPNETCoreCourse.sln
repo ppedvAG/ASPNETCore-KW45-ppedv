@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreMVC", "MovieStore
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreRazorPage", "MovieStoreRazorPage\MovieStoreRazorPage.csproj", "{64D44480-BCCF-4647-AB86-63E3D172D261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAuthentificationSample", "WindowsAuthentificationSample\WindowsAuthentificationSample.csproj", "{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{64D44480-BCCF-4647-AB86-63E3D172D261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D44480-BCCF-4647-AB86-63E3D172D261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64D44480-BCCF-4647-AB86-63E3D172D261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

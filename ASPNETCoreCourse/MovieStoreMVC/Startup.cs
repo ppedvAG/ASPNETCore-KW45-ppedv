@@ -26,6 +26,7 @@ namespace MovieStoreMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages(); //für die Indentity UI
 
             services.AddDbContext<MovieDbContext>(options =>
             {
@@ -35,6 +36,8 @@ namespace MovieStoreMVC
                 options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext")); 
             });
             services.AddSession();
+
+            services.AddAuthentication();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +58,8 @@ namespace MovieStoreMVC
 
             app.UseRouting();
             app.UseSession();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -62,6 +67,8 @@ namespace MovieStoreMVC
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapRazorPages();
             });
         }
     }
