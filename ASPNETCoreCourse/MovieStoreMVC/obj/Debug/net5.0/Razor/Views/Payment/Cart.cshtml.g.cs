@@ -34,7 +34,7 @@ using Microsoft.AspNetCore.Identity;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"766857d25e3a2cef7b3a52c9001c62efdeeb9463", @"/Views/Payment/Cart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8dfe7f2ba5deeb3392f3f0dcafcf530cd0fa3159", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eafbfe2dd4a5aa2112c1aaee6334475c33fc176b", @"/Views/_ViewImports.cshtml")]
     public class Views_Payment_Cart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

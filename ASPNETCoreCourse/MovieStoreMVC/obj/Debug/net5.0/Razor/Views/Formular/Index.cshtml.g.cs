@@ -27,7 +27,7 @@ using MovieStoreMVC.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9bb92bc872d8e3ccaaead25ee193f316f90aac0a", @"/Views/Formular/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8dfe7f2ba5deeb3392f3f0dcafcf530cd0fa3159", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eafbfe2dd4a5aa2112c1aaee6334475c33fc176b", @"/Views/_ViewImports.cshtml")]
     public class Views_Formular_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MovieStoreMVC.Models.Movie>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("control-label"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

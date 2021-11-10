@@ -34,7 +34,7 @@ using MovieStoreMVC.ViewModels;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a8ee31be5099ee58fc35d159e2622cb2d734df", @"/Views/MovieStore/JavaScriptFormularTrigger.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8dfe7f2ba5deeb3392f3f0dcafcf530cd0fa3159", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eafbfe2dd4a5aa2112c1aaee6334475c33fc176b", @"/Views/_ViewImports.cshtml")]
     public class Views_MovieStore_JavaScriptFormularTrigger : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<MovieTitleListViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

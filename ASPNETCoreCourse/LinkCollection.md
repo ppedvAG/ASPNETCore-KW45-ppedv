@@ -17,3 +17,7 @@ StateManagement (weitre Themen)
 
 - Verteiltes Caching -> DistributCaching 
 - https://docs.microsoft.com/de-de/aspnet/core/performance/caching/distributed?view=aspnetcore-6.0
+
+
+Middleware:
+https://docs.microsoft.com/de-de/aspnet/core/fundamentals/middleware/?view=aspnetcore-6.0#middleware-order

@@ -33,7 +33,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreMVC", "MovieStore
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieStoreRazorPage", "MovieStoreRazorPage\MovieStoreRazorPage.csproj", "{64D44480-BCCF-4647-AB86-63E3D172D261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsAuthentificationSample", "WindowsAuthentificationSample\WindowsAuthentificationSample.csproj", "{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsAuthentificationSample", "WindowsAuthentificationSample\WindowsAuthentificationSample.csproj", "{BEDFC4B8-1537-4DD4-A509-95350E4DEEEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

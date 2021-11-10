@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieStoreRazorPage.Data;
+using MovieStoreRazorPage.Middleware;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,6 +36,7 @@ namespace MovieStoreRazorPage
             });
 
             services.AddSession();
+            services.AddAuthentication();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +57,19 @@ namespace MovieStoreRazorPage
             app.UseStaticFiles();
             app.UseRouting();
             app.UseSession();
+
+            app.UseAuthentication();
             app.UseAuthorization();
+
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
+
+
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+             {
+                 subapp.UseThumbnailGen();
+             });
+
+
 
             app.UseEndpoints(endpoints =>
             {

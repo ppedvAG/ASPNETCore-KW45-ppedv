@@ -32,14 +32,14 @@ TAG2:
 
 - [x] State Management (30 Min)
     - [x] ViewDate / TempDate / MVC (ViewBag)
-- [ ] Routing (10Min)
+- [x] Routing (10Min)
 
 
 - [ ] Tag-Helpers (ShowCase)
 - [ ] HTML-Tag Helpers
 
 Blazor Kurs (Voraussetzungen):
-- [ ] RazorPages @page - Direktive 
+- [x] RazorPages @page - Direktive 
 - [ ] SignalR (Zusammenspiel mit Service Layer)
  
 - [x] Data Annotations
@@ -52,7 +52,7 @@ TAG3:
 -
 
 
-- [ ] MVC + Razor page -> ViewComponent 
+- [] MVC + Razor page -> ViewComponent 
   - [ ] Erweiteres Beispiel zu Localizations -> Razor Page (Quellcode verfügbar gemacht)
 
 
@@ -64,9 +64,9 @@ TAG3:
 
 ShowCase: 
 
-- [ ] Middleware -> Was ist ein Pipeline (Use, Run, Map)
-- [ ] Erstellen einer benutzerdefinierten Middleware (ThumbNail Generator) (MapWhen)
-- [ ] Filter
+- [x Middleware -> Was ist ein Pipeline (Use, Run, Map)
+- [x] Erstellen einer benutzerdefinierten Middleware (ThumbNail Generator) (MapWhen)
+- [x] Filter
 
 
 

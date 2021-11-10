@@ -27,7 +27,7 @@ using MovieStoreMVC.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e57acb56fdc0656726e7100fb11d77dbe472c5e5", @"/Views/Shared/_ProductWithLowestPrice.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8dfe7f2ba5deeb3392f3f0dcafcf530cd0fa3159", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eafbfe2dd4a5aa2112c1aaee6334475c33fc176b", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ProductWithLowestPrice : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<MovieStoreMVC.Models.Movie>>
     {
         #pragma warning disable 1998

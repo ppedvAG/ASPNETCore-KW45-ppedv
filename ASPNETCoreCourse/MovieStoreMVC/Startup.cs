@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MovieStoreMVC.Data;
+using MovieStoreMVC.Middleware;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,6 +62,14 @@ namespace MovieStoreMVC
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            AppDomain.CurrentDomain.SetData("BildVerzeichnis", env.WebRootPath);
+
+
+            app.MapWhen(context => context.Request.Path.ToString().Contains("imagegen"), subapp =>
+            {
+                subapp.UseThumbnailGen();
+            });
 
             app.UseEndpoints(endpoints =>
             {
