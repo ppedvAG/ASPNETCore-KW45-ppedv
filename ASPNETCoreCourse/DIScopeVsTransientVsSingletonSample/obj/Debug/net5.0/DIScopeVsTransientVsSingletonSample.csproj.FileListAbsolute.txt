@@ -1020,7 +1020,6 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSin
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.csproj.AssemblyReference.cache
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.GeneratedMSBuildEditorConfig.editorconfig
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.AssemblyInfoInputs.cache
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.AssemblyInfo.cs
@@ -1054,3 +1053,4 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSin
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DIScopeVsTransientVsSingletonSample\obj\Debug\net5.0\DIScopeVsTransientVsSingletonSample.csproj.AssemblyReference.cache

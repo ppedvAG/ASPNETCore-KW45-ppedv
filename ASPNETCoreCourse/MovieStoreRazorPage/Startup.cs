@@ -29,8 +29,9 @@ namespace MovieStoreRazorPage
 
             services.AddDbContext<MovieDBContext>(options =>
             {
-                options.UseInMemoryDatabase("MovieStoreDb");
-                options.EnableSensitiveDataLogging(true);
+                //options.UseInMemoryDatabase("MovieStoreDb");
+                //options.EnableSensitiveDataLogging(true);
+                options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext"));
             });
 
             services.AddSession();

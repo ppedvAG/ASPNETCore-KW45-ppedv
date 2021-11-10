@@ -18,4 +18,3 @@ C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInAS
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInASPNETCore\obj\Debug\net5.0\ref\DependencyInversionInASPNETCore.dll
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInASPNETCore\obj\Debug\net5.0\DependencyInversionInASPNETCore.pdb
 C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInASPNETCore\obj\Debug\net5.0\DependencyInversionInASPNETCore.genruntimeconfig.cache
-C:\Aktueller Kurs\ASPNETCore-KW45-ppedv\ASPNETCoreCourse\DependencyInversionInASPNETCore\obj\Debug\net5.0\DependencyInversionInASPNETCore.csproj.CopyComplete

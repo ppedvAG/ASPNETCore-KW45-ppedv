@@ -29,7 +29,10 @@ namespace MovieStoreMVC
 
             services.AddDbContext<MovieDbContext>(options =>
             {
-                options.UseInMemoryDatabase("MovieStoreDb");
+                //options.UseInMemoryDatabase("MovieStoreDb");
+
+                //SQL Provider bezieht seinen Connection-String aus der appsettings.json
+                options.UseSqlServer(Configuration.GetConnectionString("MovieDbContext")); 
             });
             services.AddSession();
         }
