@@ -12,5 +12,10 @@ namespace MovieStoreMVC.Controllers
         {
             return View();
         }
+
+        public IActionResult OwnASPTagHelper()
+        {
+            return View();
+        }
     }
 }
